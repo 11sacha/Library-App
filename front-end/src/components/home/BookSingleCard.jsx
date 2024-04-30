@@ -8,8 +8,10 @@ import { MdOutlineDelete } from 'react-icons/md';
 
 const BookSingleCard = ({ book }) => {
 
+  const yearPosition = book.title.length > 15 ? '-2' : '2';
+
   return (
-    <div className=' w-[75%] border-2 border-gray-500 rounded-lg px-4 py-1 m-4 relative hover:shadow-xl'>
+    <div className='w-[90%] border-2 border-gray-500 rounded-lg px-4 py-1 m-4 relative hover:shadow-xl'>
       <h2 className='absolute top-1 right-2 px-4 py-1 bg-red-300 rounded-lg'>
         {book.publishYear}
       </h2>
